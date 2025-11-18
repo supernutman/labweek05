@@ -1,5 +1,6 @@
 ทำถึงแค่ข้อ2 
 
-run test```
+run test:
+```
 go test
 ```
