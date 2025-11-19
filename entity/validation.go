@@ -1,4 +1,4 @@
-package entity
+ package entity
 
 import (
 	"github.com/asaskevich/govalidator"
@@ -12,7 +12,7 @@ func init() {	// Custom validator for Price
 		if !ok {
 			return false
 		}
-		return v > 0
+		return v >= 0
 	})
 
 	// Custom validator for Stock
@@ -31,6 +31,4 @@ func ValidateStudent(s Student) (bool, error) {
     ok, err := govalidator.ValidateStruct(s)
     return ok, err
 }
-
-
 
